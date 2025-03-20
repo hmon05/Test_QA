@@ -8,7 +8,8 @@ export class Home {
     constructor(page: Page) {
         this.subscribeNotifications = page.getByText('No permitir');
         this.searchBar = page.locator('#search-words');
-        this.searchButton = page.getByRole('button');
+        this.searchButton = page.locator('input[type="button"]');
+        // this.searchButton = page.getByRole('button');
     }
 
     async denyNotifications() {

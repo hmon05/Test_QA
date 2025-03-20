@@ -11,10 +11,9 @@ test( 'Agregar un producto al carro de compras:'  , async ({ page }) => {
   test.step('No permitir suscripción a notificaciones', async () => {
     await home.denyNotifications();
   });
-  
-  
+    
   test.step('Buscar producto', async () => {
-      await home.searchBar.fill('Gafas de sol para hombre');
+      await home.searchBar.fill('Humificador');
       await home.searchButton.click();
       
       const page1Promise = page.waitForEvent('popup');
