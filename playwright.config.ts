@@ -34,7 +34,7 @@ export default defineConfig({
       mode: 'only-on-failure',
       fullPage: true,
     },
-    video: 'retain-on-failure',
+    video: 'on',
   },
 
   /* Configure projects for major browsers */
