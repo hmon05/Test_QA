@@ -1,14 +1,22 @@
 import { test, expect } from '@playwright/test';
+import { Home } from '../tests/pages/home';
 
 test.beforeEach(async ({page}) => {
   await page.goto('https://es.aliexpress.com/');
 });
 
-test.describe( 'Agregar un producto al carro de compras:' , () => {
-  test('Buscar producto', async ({ page }) => {
-      await page.locator('.search--keyword--15P08Ji').fill('Humificador');
-      await page.locator('input[type="button"]').click(); 
+test( 'Agregar un producto al carro de compras:'  , async ({ page }) => {
+  const home = new Home(page);
 
+  test.step('No permitir suscripción a notificaciones', async () => {
+    await home.denyNotifications();
+  });
+  
+  
+  test.step('Buscar producto', async () => {
+      await home.searchBar.fill('Gafas de sol para hombre');
+      await home.searchButton.click();
+      
       const page1Promise = page.waitForEvent('popup');
       await page.getByRole('link', { name: 'Report fraud item Humidificador de niebla en aerosol portátil, Mini taza de' }).click();
       const page1 = await page1Promise;
