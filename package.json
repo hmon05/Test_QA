@@ -1,0 +1,22 @@
+{
+  "name": "test_qa",
+  "version": "1.0.0",
+  "description": "SQA",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmon05/Test_QA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hmon05/Test_QA/issues"
+  },
+  "homepage": "https://github.com/hmon05/Test_QA#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.10"
+  }
+}
