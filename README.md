@@ -17,4 +17,3 @@ Esta prueba técnica busca medir las capacidades de automatización de pruebas, 
 
 # Ejecución de pruebas
 - Ejecutar el escenario de prueba. **npx playwright test testSQA.spec.ts --headed --project=chromium**
-    - Si está familiarizado con la interfaz de usuario del playwrigth, Ejecutar para iniciar la interfaz de usuario del dramaturgonpm start
