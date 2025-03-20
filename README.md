@@ -10,3 +10,11 @@ Esta prueba técnica busca medir las capacidades de automatización de pruebas, 
 - **Validar el precio del producto**
 - **Ir a la cesta**
 - **Validar el precio del producto**
+
+# Configuración
+- Instalar las dependencias y el nodo de playwright: npm i && npx playwright install --with-deps
+    - Solo es necesario ejecutar al actualizar las dependencias **npm i**
+
+# Ejecución de pruebas
+- Ejecutar el escenario de prueba. **npx playwright test testSQA.spec.ts --headed --project=chromium**
+    - Si está familiarizado con la interfaz de usuario del playwrigth, Ejecutar para iniciar la interfaz de usuario del dramaturgonpm start
